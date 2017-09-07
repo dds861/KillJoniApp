@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">kill_joni JONI AST</string>
+    <string name="title_activity_main2">kill_joni JONI AST</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu1">Чат</string>
+    <string name="menu2">Фраги</string>
+    <string name="menu3">Статус Сервера</string>
+    <string name="killed">убил</string>
+    <string name="with">с</string>
+    <string name="textOnHeader">CS 1.6 kill_joni Servers</string>
+    <string name="text2Header">https://vk.com/killjoniast</string>
+    <string name="MainActivityText">
+    Добро пожаловать на kill_joni JONI AST
+    <!--\n\nIP адрес: 46.174.48.29:27202​-->
+    <!--\n\nСлотов - 15-->
+
+<!--\nХостинг сервера - www.myarena.ru-->
+<!--\nГруппа ВКонтакте - vk.com/killjoniast-->
+<!--\nБанлист - AMXBans - Gm-->
+<!--\nРейтинг игроков - HLstatsX-->
+<!--\nТип сервера - Публичный 1000 FPS (ReHLDS)-->
+<!--\nБансистема - FreshBan, DopBan-->
+<!--\nАнтичиты - Rechecker, WHBlocker, AIM detector, Aliases checker-->
+    </string>
+</resources>
