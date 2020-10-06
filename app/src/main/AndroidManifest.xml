@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_swat"
@@ -12,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.Activity3SectionsPager"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,17 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Menu1.ActivityMenu1"
-            android:label="@string/menu1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Menu2.ActivityMenu2"
-            android:label="@string/menu2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Menu3.ActivityMenu3"
-            android:label="@string/menu2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".Activities.Activity1First"
+            android:label="@string/title_activity_first"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.joni.dd.killjoni.Menu1;
+package com.joni.dd.killjoni.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.joni.dd.killjoni.R;
+import com.joni.dd.killjoni.UserMenu.User3_1Chat;
 
 import java.util.List;
 
@@ -15,12 +16,12 @@ import java.util.List;
  * Created by dd on 03.05.2017.
  */
 
-public class AdapterMenu1 extends RecyclerView.Adapter<AdapterMenu1.ViewHolder> {
+public class Adapter3_1Chat extends RecyclerView.Adapter<Adapter3_1Chat.ViewHolder> {
 
-    private List<UserMenu1> item;
+    private List<User3_1Chat> item;
     Context context;
 
-    public AdapterMenu1(Context context, List<UserMenu1> item) {
+    public Adapter3_1Chat(Context context, List<User3_1Chat> item) {
         this.item = item;
         this.context = context;
     }
@@ -28,16 +29,21 @@ public class AdapterMenu1 extends RecyclerView.Adapter<AdapterMenu1.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.menu1_content, null);
+        View view = LayoutInflater.from(context).inflate(R.layout.content1_chat, null);
         return new ViewHolder(view);
     }
 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-            holder.message.setText(item.get(position).getMessage());
-            holder.eventTime.setText(item.get(position).getEventTime());
-            holder.lastName.setText(item.get(position).getLastName());
+
+        String message = item.get(position).getMessage();
+        String eventTimeChat = item.get(position).getEventTime();
+        String lastName = item.get(position).getLastName();
+
+        holder.message.setText(message);
+        holder.eventTime.setText(eventTimeChat.substring(11));
+        holder.lastName.setText(lastName);
     }
 
     @Override

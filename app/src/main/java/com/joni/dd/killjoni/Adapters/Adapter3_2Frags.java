@@ -1,4 +1,4 @@
-package com.joni.dd.killjoni.Menu2;
+package com.joni.dd.killjoni.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.joni.dd.killjoni.R;
+import com.joni.dd.killjoni.UserMenu.User3_2Frags;
 
 import java.util.List;
 
@@ -16,12 +17,12 @@ import java.util.List;
  * Created by dd on 03.05.2017.
  */
 
-public class AdapterMenu2 extends RecyclerView.Adapter<AdapterMenu2.ViewHolder> {
+public class Adapter3_2Frags extends RecyclerView.Adapter<Adapter3_2Frags.ViewHolder> {
 
-    private List<UserMenu2> item;
+    private List<User3_2Frags> item;
     Context context;
 
-    public AdapterMenu2(Context context, List<UserMenu2> item) {
+    public Adapter3_2Frags(Context context, List<User3_2Frags> item) {
         Log.d("123", "RecyclerViewAdapterStatusServer");
         this.item = item;
         this.context = context;
@@ -29,7 +30,7 @@ public class AdapterMenu2 extends RecyclerView.Adapter<AdapterMenu2.ViewHolder> 
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.menu2_content, null);
+        View view = LayoutInflater.from(context).inflate(R.layout.content2_frags, null);
         return new ViewHolder(view);
     }
 
@@ -37,11 +38,19 @@ public class AdapterMenu2 extends RecyclerView.Adapter<AdapterMenu2.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-            holder.FragsEventTime.setText(item.get(position).getEventTime());
-            holder.killerLastName.setText(item.get(position).getKillerLastName());
-            holder.victimLastName.setText(item.get(position).getVictimLastName());
-            holder.weapon.setText(item.get(position).getWeapon());
-            holder.headshot.setText(item.get(position).getHeadshot());
+        String eventTimeFrags = item.get(position).getEventTime();
+        String killerLastName = item.get(position).getKillerLastName();
+        String victimLastName = item.get(position).getVictimLastName();
+        String weapon = item.get(position).getWeapon();
+        String headshot = item.get(position).getHeadshot();
+
+
+
+        holder.FragsEventTime.setText(eventTimeFrags.substring(11));
+        holder.killerLastName.setText(killerLastName);
+        holder.victimLastName.setText(victimLastName);
+        holder.weapon.setText(weapon);
+        holder.headshot.setText(headshot);
 
     }
 
