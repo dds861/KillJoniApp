@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KillJoniApp.iml" filepath="$PROJECT_DIR$/KillJoniApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KillJoniApp.iml" filepath="$PROJECT_DIR$/.idea/modules/KillJoniApp.iml" group="KillJoniApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KillJoniApp-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KillJoniApp-app.iml" group="KillJoniApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/KillJoniApp3.iml" filepath="$PROJECT_DIR$/KillJoniApp3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

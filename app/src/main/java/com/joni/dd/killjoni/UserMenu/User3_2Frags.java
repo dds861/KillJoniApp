@@ -1,10 +1,10 @@
-package com.joni.dd.killjoni.Menu2;
+package com.joni.dd.killjoni.UserMenu;
 
 /**
  * Created by dd on 03.05.2017.
  */
 
-public class UserMenu2 {
+public class User3_2Frags {
 
     //Frags Variables
     private String eventTime;
@@ -14,7 +14,7 @@ public class UserMenu2 {
     private String headshot;
 
     //Frags contructer
-    public UserMenu2(String eventTime, String killerLastName, String victimLastName, String weapon, String headshot) {
+    public User3_2Frags(String eventTime, String killerLastName, String victimLastName, String weapon, String headshot) {
         this.eventTime      = eventTime;
         this.killerLastName = killerLastName;
         this.victimLastName = victimLastName;

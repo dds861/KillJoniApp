@@ -1,14 +1,16 @@
 package com.joni.dd.killjoni;
 
 
-import com.joni.dd.killjoni.Menu1.UserMenu1;
-import com.joni.dd.killjoni.Menu2.UserMenu2;
-import com.joni.dd.killjoni.Menu3.UserMenu3;
+import com.joni.dd.killjoni.UserMenu.User3_3Status;
+import com.joni.dd.killjoni.UserMenu.User3_1Chat;
+import com.joni.dd.killjoni.UserMenu.User3_2Frags;
+import com.joni.dd.killjoni.UserMenu.User3_4Players;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 /**
  * Created by dd on 03.05.2017.
@@ -17,14 +19,30 @@ import retrofit2.http.GET;
 public interface APIService {
     //url for Chat
     @GET("hlstats_Events_Chat.php")
-    Call<List<UserMenu1>> getUserDataChat();
+    Call<List<User3_1Chat>> getChat();
 
     //url for Frags
     @GET("hlstats_Events_Frags.php")
-    Call<List<UserMenu2>> getUserDataFrags();
+    Call<List<User3_2Frags>> getFrags();
 
     //url for myarena Status
-    @GET("api.php?query=status&token=5d4b9daa7be20d6d58cbb2028170f961")
-    Call<UserMenu3> getUserData();
+    @GET("api.php")
+    Call<User3_3Status> getUserData(@Query("query") String query, @Query("token") String token);
+
+    //url for myarena Status
+    @GET("api.php")
+    Call<User3_3Status> getPlayers(@Query("query") String query, @Query("token") String token);
+
+    //kick
+    @GET("api.php")
+    Call<User3_4Players> getConsoleCmd(@Query("query") String query, @Query("cmd") String cmd, @Query("token") String token);;
+
+    //Start
+    @GET("api.php")
+    Call<User3_4Players> getServerActions(@Query("query") String query, @Query("token") String token);
+
+
+
+
 
 }

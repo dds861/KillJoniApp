@@ -9,21 +9,22 @@
     <string name="menu1">Чат</string>
     <string name="menu2">Фраги</string>
     <string name="menu3">Статус Сервера</string>
+    <string name="menu4">Players</string>
     <string name="killed">убил</string>
     <string name="with">с</string>
     <string name="textOnHeader">CS 1.6 kill_joni Servers</string>
     <string name="text2Header">https://vk.com/killjoniast</string>
-    <string name="MainActivityText">
-    Добро пожаловать на kill_joni JONI AST
-    <!--\n\nIP адрес: 46.174.48.29:27202​-->
-    <!--\n\nСлотов - 15-->
+    <string name="MainActivityText">Добро пожаловать на kill_joni JONI AST</string>
 
-<!--\nХостинг сервера - www.myarena.ru-->
-<!--\nГруппа ВКонтакте - vk.com/killjoniast-->
-<!--\nБанлист - AMXBans - Gm-->
-<!--\nРейтинг игроков - HLstatsX-->
-<!--\nТип сервера - Публичный 1000 FPS (ReHLDS)-->
-<!--\nБансистема - FreshBan, DopBan-->
-<!--\nАнтичиты - Rechecker, WHBlocker, AIM detector, Aliases checker-->
-    </string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="gag">gag</string>
+    <string name="ban">amx_ban 10</string>
+    <string name="slay">amx_slay</string>
+    <string name="slap">amx_slap</string>
+    <string name="kick">amx_kick</string>
+    <string name="token">2e5dcefb0c72d69ead8c2c1d0a2ba358</string>
+
+
 </resources>
